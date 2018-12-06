@@ -225,7 +225,7 @@ public class PlaygroundGUI extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jTabbedPane1)
                         .addComponent(jSplitPane1)))
-                .addContainerGap(290, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +243,7 @@ public class PlaygroundGUI extends javax.swing.JFrame {
                     .addComponent(greenButton)
                     .addComponent(yellowButton)
                     .addComponent(allButton))
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
