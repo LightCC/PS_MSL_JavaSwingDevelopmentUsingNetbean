@@ -39,6 +39,16 @@ public class PlaygroundGUI extends javax.swing.JFrame {
         jTabbedPane5 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLayeredPane2 = new javax.swing.JLayeredPane();
+        redPanel = new javax.swing.JPanel();
+        bluePanel = new javax.swing.JPanel();
+        greenPanel = new javax.swing.JPanel();
+        yellowPanel = new javax.swing.JPanel();
+        redButton = new javax.swing.JButton();
+        blueButton = new javax.swing.JButton();
+        greenButton = new javax.swing.JButton();
+        yellowButton = new javax.swing.JButton();
+        allButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,16 +104,128 @@ public class PlaygroundGUI extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Blank Panel", jPanel1);
 
+        jLayeredPane2.setBackground(new java.awt.Color(204, 255, 255));
+        jLayeredPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Layered Pane"));
+        jLayeredPane2.setToolTipText("");
+        jLayeredPane2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        redPanel.setBackground(new java.awt.Color(255, 51, 51));
+
+        javax.swing.GroupLayout redPanelLayout = new javax.swing.GroupLayout(redPanel);
+        redPanel.setLayout(redPanelLayout);
+        redPanelLayout.setHorizontalGroup(
+            redPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 101, Short.MAX_VALUE)
+        );
+        redPanelLayout.setVerticalGroup(
+            redPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 94, Short.MAX_VALUE)
+        );
+
+        jLayeredPane2.add(redPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 41, -1, -1));
+
+        bluePanel.setBackground(new java.awt.Color(51, 102, 255));
+
+        javax.swing.GroupLayout bluePanelLayout = new javax.swing.GroupLayout(bluePanel);
+        bluePanel.setLayout(bluePanelLayout);
+        bluePanelLayout.setHorizontalGroup(
+            bluePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 95, Short.MAX_VALUE)
+        );
+        bluePanelLayout.setVerticalGroup(
+            bluePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jLayeredPane2.add(bluePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, -1, -1));
+
+        greenPanel.setBackground(new java.awt.Color(51, 255, 0));
+
+        javax.swing.GroupLayout greenPanelLayout = new javax.swing.GroupLayout(greenPanel);
+        greenPanel.setLayout(greenPanelLayout);
+        greenPanelLayout.setHorizontalGroup(
+            greenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        greenPanelLayout.setVerticalGroup(
+            greenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jLayeredPane2.add(greenPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, -1));
+
+        yellowPanel.setBackground(new java.awt.Color(255, 255, 102));
+
+        javax.swing.GroupLayout yellowPanelLayout = new javax.swing.GroupLayout(yellowPanel);
+        yellowPanel.setLayout(yellowPanelLayout);
+        yellowPanelLayout.setHorizontalGroup(
+            yellowPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        yellowPanelLayout.setVerticalGroup(
+            yellowPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jLayeredPane2.add(yellowPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+
+        redButton.setText("Red");
+        redButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                redButtonActionPerformed(evt);
+            }
+        });
+
+        blueButton.setText("Blue");
+        blueButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                blueButtonActionPerformed(evt);
+            }
+        });
+
+        greenButton.setText("Green");
+        greenButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                greenButtonActionPerformed(evt);
+            }
+        });
+
+        yellowButton.setText("Yellow");
+        yellowButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yellowButtonActionPerformed(evt);
+            }
+        });
+
+        allButton.setText("All");
+        allButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                allButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTabbedPane1)
-                    .addComponent(jSplitPane1))
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(redButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(blueButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(greenButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(yellowButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(allButton))
+                    .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 475, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jTabbedPane1)
+                        .addComponent(jSplitPane1)))
+                .addContainerGap(290, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,11 +234,56 @@ public class PlaygroundGUI extends javax.swing.JFrame {
                 .addComponent(jSplitPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(redButton)
+                    .addComponent(blueButton)
+                    .addComponent(greenButton)
+                    .addComponent(yellowButton)
+                    .addComponent(allButton))
+                .addContainerGap(160, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void redButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_redButtonActionPerformed
+        redPanel.setVisible(true);
+        bluePanel.setVisible(false);
+        greenPanel.setVisible(false);
+        yellowPanel.setVisible(false);
+    }//GEN-LAST:event_redButtonActionPerformed
+
+    private void blueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blueButtonActionPerformed
+        redPanel.setVisible(false);
+        bluePanel.setVisible(true);
+        greenPanel.setVisible(false);
+        yellowPanel.setVisible(false);
+    }//GEN-LAST:event_blueButtonActionPerformed
+
+    private void greenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_greenButtonActionPerformed
+        redPanel.setVisible(false);
+        bluePanel.setVisible(false);
+        greenPanel.setVisible(true);
+        yellowPanel.setVisible(false);
+    }//GEN-LAST:event_greenButtonActionPerformed
+
+    private void yellowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yellowButtonActionPerformed
+        redPanel.setVisible(false);
+        bluePanel.setVisible(false);
+        greenPanel.setVisible(false);
+        yellowPanel.setVisible(true);
+    }//GEN-LAST:event_yellowButtonActionPerformed
+
+    private void allButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_allButtonActionPerformed
+        redPanel.setVisible(true);
+        bluePanel.setVisible(true);
+        greenPanel.setVisible(true);
+        yellowPanel.setVisible(true);
+    }//GEN-LAST:event_allButtonActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -156,7 +323,13 @@ public class PlaygroundGUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea SplitPaneTextLeft;
     private javax.swing.JTextArea SplitPaneTextRight;
+    private javax.swing.JButton allButton;
+    private javax.swing.JButton blueButton;
+    private javax.swing.JPanel bluePanel;
+    private javax.swing.JButton greenButton;
+    private javax.swing.JPanel greenPanel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPaneLeft;
     private javax.swing.JScrollPane jScrollPaneRight;
@@ -166,5 +339,9 @@ public class PlaygroundGUI extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JTabbedPane jTabbedPane5;
+    private javax.swing.JButton redButton;
+    private javax.swing.JPanel redPanel;
+    private javax.swing.JButton yellowButton;
+    private javax.swing.JPanel yellowPanel;
     // End of variables declaration//GEN-END:variables
 }
