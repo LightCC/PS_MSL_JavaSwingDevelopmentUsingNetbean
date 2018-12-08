@@ -27,101 +27,249 @@ public class DesktopGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        yesPopupMenu1Item = new javax.swing.JMenuItem();
+        noPopupMenu1Item = new javax.swing.JMenuItem();
+        maybePopupMenu1Item = new javax.swing.JMenuItem();
         jDesktopPane1 = new javax.swing.JDesktopPane();
-        jInternalFrame3 = new javax.swing.JInternalFrame();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
-        jInternalFrame2 = new javax.swing.JInternalFrame();
+        window1 = new javax.swing.JInternalFrame();
+        jLabel1 = new javax.swing.JLabel();
+        window3 = new javax.swing.JInternalFrame();
+        jLabel3 = new javax.swing.JLabel();
+        window2 = new javax.swing.JInternalFrame();
+        jLabel2 = new javax.swing.JLabel();
+        mainMenuBar = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        newMenuItem = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        openMenuItem = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
+        exitMenuItem = new javax.swing.JMenuItem();
+        viewMenu = new javax.swing.JMenu();
+        window1MenuItem = new javax.swing.JMenuItem();
+        window2MenuItem = new javax.swing.JMenuItem();
+        window3MenuItem = new javax.swing.JMenuItem();
+        checkboxMenu = new javax.swing.JMenu();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem2 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem3 = new javax.swing.JCheckBoxMenuItem();
+        radioMenu = new javax.swing.JMenu();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
+        helpMenu = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+
+        yesPopupMenu1Item.setText("Yes");
+        yesPopupMenu1Item.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                yesPopupMenu1ItemMousePressed(evt);
+            }
+        });
+        yesPopupMenu1Item.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yesPopupMenu1ItemActionPerformed(evt);
+            }
+        });
+        jPopupMenu1.add(yesPopupMenu1Item);
+
+        noPopupMenu1Item.setText("No");
+        jPopupMenu1.add(noPopupMenu1Item);
+
+        maybePopupMenu1Item.setText("Maybe");
+        jPopupMenu1.add(maybePopupMenu1Item);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jDesktopPane1.setBackground(new java.awt.Color(204, 204, 255));
+        jDesktopPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jDesktopPane1MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jDesktopPane1MouseReleased(evt);
+            }
+        });
 
-        jInternalFrame3.setIconifiable(true);
-        jInternalFrame3.setMaximizable(true);
-        jInternalFrame3.setResizable(true);
-        jInternalFrame3.setTitle("Lone Window");
-        jInternalFrame3.setVisible(true);
+        window1.setClosable(true);
+        window1.setIconifiable(true);
+        window1.setMaximizable(true);
+        window1.setResizable(true);
+        window1.setTitle("Window1");
+        window1.setVisible(true);
+        window1.getContentPane().setLayout(null);
 
-        javax.swing.GroupLayout jInternalFrame3Layout = new javax.swing.GroupLayout(jInternalFrame3.getContentPane());
-        jInternalFrame3.getContentPane().setLayout(jInternalFrame3Layout);
-        jInternalFrame3Layout.setHorizontalGroup(
-            jInternalFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 264, Short.MAX_VALUE)
+        jLabel1.setText("jLabel1");
+        window1.getContentPane().add(jLabel1);
+        jLabel1.setBounds(91, 74, 41, 16);
+
+        jDesktopPane1.add(window1);
+        window1.setBounds(40, 20, 250, 220);
+
+        window3.setClosable(true);
+        window3.setIconifiable(true);
+        window3.setMaximizable(true);
+        window3.setResizable(true);
+        window3.setTitle("Window3");
+        window3.setVisible(true);
+
+        jLabel3.setText("jLabel3");
+
+        javax.swing.GroupLayout window3Layout = new javax.swing.GroupLayout(window3.getContentPane());
+        window3.getContentPane().setLayout(window3Layout);
+        window3Layout.setHorizontalGroup(
+            window3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(window3Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(jLabel3)
+                .addContainerGap(104, Short.MAX_VALUE))
         );
-        jInternalFrame3Layout.setVerticalGroup(
-            jInternalFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 286, Short.MAX_VALUE)
-        );
-
-        jInternalFrame1.setIconifiable(true);
-        jInternalFrame1.setMaximizable(true);
-        jInternalFrame1.setResizable(true);
-        jInternalFrame1.setTitle("Mommy");
-        jInternalFrame1.setVisible(true);
-
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 428, Short.MAX_VALUE)
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 424, Short.MAX_VALUE)
-        );
-
-        jInternalFrame2.setIconifiable(true);
-        jInternalFrame2.setMaximizable(true);
-        jInternalFrame2.setResizable(true);
-        jInternalFrame2.setTitle("Child");
-        jInternalFrame2.setVisible(true);
-
-        javax.swing.GroupLayout jInternalFrame2Layout = new javax.swing.GroupLayout(jInternalFrame2.getContentPane());
-        jInternalFrame2.getContentPane().setLayout(jInternalFrame2Layout);
-        jInternalFrame2Layout.setHorizontalGroup(
-            jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 168, Short.MAX_VALUE)
-        );
-        jInternalFrame2Layout.setVerticalGroup(
-            jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 124, Short.MAX_VALUE)
+        window3Layout.setVerticalGroup(
+            window3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(window3Layout.createSequentialGroup()
+                .addGap(78, 78, 78)
+                .addComponent(jLabel3)
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
-        jDesktopPane1.setLayer(jInternalFrame3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jInternalFrame1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jInternalFrame2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.add(window3);
+        window3.setBounds(640, 70, 249, 242);
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(jInternalFrame2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(288, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jInternalFrame3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(95, 95, 95))))
+        window2.setClosable(true);
+        window2.setIconifiable(true);
+        window2.setMaximizable(true);
+        window2.setTitle("Window2");
+        window2.setVisible(true);
+
+        jLabel2.setText("jLabel2");
+
+        javax.swing.GroupLayout window2Layout = new javax.swing.GroupLayout(window2.getContentPane());
+        window2.getContentPane().setLayout(window2Layout);
+        window2Layout.setHorizontalGroup(
+            window2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(window2Layout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addComponent(jLabel2)
+                .addContainerGap(126, Short.MAX_VALUE))
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addComponent(jInternalFrame3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                        .addComponent(jInternalFrame2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        window2Layout.setVerticalGroup(
+            window2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(window2Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jLabel2)
+                .addContainerGap(125, Short.MAX_VALUE))
         );
+
+        jDesktopPane1.add(window2);
+        window2.setBounds(330, 40, 270, 254);
+
+        fileMenu.setText("File");
+
+        newMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
+        newMenuItem.setText("New");
+        fileMenu.add(newMenuItem);
+        fileMenu.add(jSeparator1);
+
+        openMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
+        openMenuItem.setText("Open");
+        fileMenu.add(openMenuItem);
+        fileMenu.add(jSeparator2);
+
+        exitMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
+        exitMenuItem.setText("Exit");
+        exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitMenuItemActionPerformed(evt);
+            }
+        });
+        fileMenu.add(exitMenuItem);
+
+        mainMenuBar.add(fileMenu);
+
+        viewMenu.setText("View");
+
+        window1MenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.CTRL_MASK));
+        window1MenuItem.setText("Window1");
+        window1MenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                window1MenuItemActionPerformed(evt);
+            }
+        });
+        viewMenu.add(window1MenuItem);
+
+        window2MenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.CTRL_MASK));
+        window2MenuItem.setText("Window2");
+        window2MenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                window2MenuItemActionPerformed(evt);
+            }
+        });
+        viewMenu.add(window2MenuItem);
+
+        window3MenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_3, java.awt.event.InputEvent.CTRL_MASK));
+        window3MenuItem.setText("Window3");
+        window3MenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                window3MenuItemActionPerformed(evt);
+            }
+        });
+        viewMenu.add(window3MenuItem);
+
+        mainMenuBar.add(viewMenu);
+
+        checkboxMenu.setText("CheckBox");
+
+        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
+        checkboxMenu.add(jCheckBoxMenuItem1);
+
+        jCheckBoxMenuItem2.setText("jCheckBoxMenuItem2");
+        checkboxMenu.add(jCheckBoxMenuItem2);
+
+        jCheckBoxMenuItem3.setText("jCheckBoxMenuItem3");
+        checkboxMenu.add(jCheckBoxMenuItem3);
+
+        mainMenuBar.add(checkboxMenu);
+
+        radioMenu.setText("Radio");
+
+        buttonGroup1.add(jRadioButtonMenuItem1);
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
+        radioMenu.add(jRadioButtonMenuItem1);
+
+        buttonGroup1.add(jRadioButtonMenuItem2);
+        jRadioButtonMenuItem2.setText("jRadioButtonMenuItem2");
+        radioMenu.add(jRadioButtonMenuItem2);
+
+        buttonGroup1.add(jRadioButtonMenuItem3);
+        jRadioButtonMenuItem3.setText("jRadioButtonMenuItem3");
+        radioMenu.add(jRadioButtonMenuItem3);
+
+        mainMenuBar.add(radioMenu);
+
+        helpMenu.setText("Help");
+
+        jMenu4.setText("Content");
+
+        jMenuItem4.setText("Index");
+        jMenu4.add(jMenuItem4);
+
+        jMenuItem5.setText("About Me!!");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem5);
+
+        helpMenu.add(jMenu4);
+
+        mainMenuBar.add(helpMenu);
+
+        setJMenuBar(mainMenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -129,19 +277,61 @@ public class DesktopGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jDesktopPane1)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 936, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jDesktopPane1)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 517, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void window3MenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_window3MenuItemActionPerformed
+        window3.setVisible(true);
+    }//GEN-LAST:event_window3MenuItemActionPerformed
+
+    private void window1MenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_window1MenuItemActionPerformed
+        window1.setVisible(true);
+        jDesktopPane1.add(window1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+    }//GEN-LAST:event_window1MenuItemActionPerformed
+
+    private void window2MenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_window2MenuItemActionPerformed
+        window2.requestFocus();
+    }//GEN-LAST:event_window2MenuItemActionPerformed
+
+    private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_exitMenuItemActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        new AboutGUI().setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void yesPopupMenu1ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yesPopupMenu1ItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yesPopupMenu1ItemActionPerformed
+
+    private void yesPopupMenu1ItemMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yesPopupMenu1ItemMousePressed
+    }//GEN-LAST:event_yesPopupMenu1ItemMousePressed
+
+    private void jDesktopPane1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jDesktopPane1MousePressed
+        if(evt.isPopupTrigger()){
+            jPopupMenu1.show(evt.getComponent(), evt.getX(), evt.getY());
+        }
+
+    }//GEN-LAST:event_jDesktopPane1MousePressed
+
+    private void jDesktopPane1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jDesktopPane1MouseReleased
+        if(evt.isPopupTrigger()){
+            jPopupMenu1.show(evt.getComponent(), evt.getX(), evt.getY());
+        }
+
+    }//GEN-LAST:event_jDesktopPane1MouseReleased
 
     /**
      * @param args the command line arguments
@@ -179,9 +369,40 @@ public class DesktopGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JMenu checkboxMenu;
+    private javax.swing.JMenuItem exitMenuItem;
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenu helpMenu;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem3;
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JInternalFrame jInternalFrame2;
-    private javax.swing.JInternalFrame jInternalFrame3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JMenuBar mainMenuBar;
+    private javax.swing.JMenuItem maybePopupMenu1Item;
+    private javax.swing.JMenuItem newMenuItem;
+    private javax.swing.JMenuItem noPopupMenu1Item;
+    private javax.swing.JMenuItem openMenuItem;
+    private javax.swing.JMenu radioMenu;
+    private javax.swing.JMenu viewMenu;
+    private javax.swing.JInternalFrame window1;
+    private javax.swing.JMenuItem window1MenuItem;
+    private javax.swing.JInternalFrame window2;
+    private javax.swing.JMenuItem window2MenuItem;
+    private javax.swing.JInternalFrame window3;
+    private javax.swing.JMenuItem window3MenuItem;
+    private javax.swing.JMenuItem yesPopupMenu1Item;
     // End of variables declaration//GEN-END:variables
 }
