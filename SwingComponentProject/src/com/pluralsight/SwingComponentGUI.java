@@ -5,6 +5,7 @@
  */
 package com.pluralsight;
 
+import javax.swing.JOptionPane;
 import javax.swing.JSlider;
 import javax.swing.JSpinner;
 
@@ -360,21 +361,36 @@ public class SwingComponentGUI extends javax.swing.JFrame {
         jPanel5.setLayout(new java.awt.BorderLayout());
 
         jButton1.setBackground(new java.awt.Color(204, 204, 255));
-        jButton1.setText("jButton1");
+        jButton1.setText("Warning!");
         jButton1.setFocusable(false);
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel5.add(jButton1, java.awt.BorderLayout.LINE_START);
 
         jButton2.setBackground(new java.awt.Color(255, 204, 255));
-        jButton2.setText("jButton2");
+        jButton2.setText("Show Option Dialog");
         jButton2.setFocusable(false);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel5.add(jButton2, java.awt.BorderLayout.CENTER);
 
         jButton4.setBackground(new java.awt.Color(204, 255, 204));
-        jButton4.setText("jButton4");
+        jButton4.setText("Select a Value and Display It");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel5.add(jButton4, java.awt.BorderLayout.LINE_END);
 
         jToolBar1.add(jPanel5);
@@ -482,6 +498,26 @@ public class SwingComponentGUI extends javax.swing.JFrame {
         int value = source.getValue();
         jProgressBar1.setValue(value);
     }//GEN-LAST:event_jSlider1StateChanged
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(null, "Warning Will Robinson!!", "Warning", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Object [] options = { "Yes", "I'm Not Sure", "Definitely Not" };
+        int i = JOptionPane.showOptionDialog(
+                null, "Would you like to format your hard drive?", "Reset", 
+                JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, 
+                null, options, options[0]);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Object [] options = { "Yes", "Never", "Eventually" };
+        String query = "Please select a value";
+        Object input = JOptionPane.showInputDialog(null, query, "Choose",
+                JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+        JOptionPane.showMessageDialog(null, input);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
