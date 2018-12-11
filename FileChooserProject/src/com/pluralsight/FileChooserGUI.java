@@ -5,9 +5,11 @@
  */
 package com.pluralsight;
 
+import java.awt.Color;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import javax.swing.JColorChooser;
 import javax.swing.JFileChooser;
 
 class CustomFilter extends javax.swing.filechooser.FileFilter {
@@ -52,6 +54,7 @@ public class FileChooserGUI extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         exitMenuItem = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        setBackgroundMenuItem = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -76,6 +79,14 @@ public class FileChooserGUI extends javax.swing.JFrame {
                 }
             });
             exitMenuItem.add(jMenuItem1);
+
+            setBackgroundMenuItem.setText("Set Background Color");
+            setBackgroundMenuItem.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    setBackgroundMenuItemActionPerformed(evt);
+                }
+            });
+            exitMenuItem.add(setBackgroundMenuItem);
             exitMenuItem.add(jSeparator1);
 
             jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
@@ -123,6 +134,11 @@ public class FileChooserGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void setBackgroundMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setBackgroundMenuItemActionPerformed
+        Color color = JColorChooser.showDialog(null, "Please choose a color", Color.white);
+        textArea.setBackground(color);
+    }//GEN-LAST:event_setBackgroundMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -166,6 +182,7 @@ public class FileChooserGUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JMenuItem setBackgroundMenuItem;
     private javax.swing.JTextArea textArea;
     // End of variables declaration//GEN-END:variables
 }
